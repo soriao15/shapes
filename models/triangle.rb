@@ -88,12 +88,8 @@ class Circle
 	def radius
 		@r
 	end
-	def diameter=(d)
-		d = (@r * 2)
-		@d = d.to_f
-	end
 	def diameter
-		@d 
+		@d = (@r * 2) 
 	end
 	def circumfrence=(circumfrence)
 		@circumfrence = circumfrence.to_f
@@ -110,22 +106,22 @@ class Circle
 	def calculate_circumfrence
 		if radius
 			@circumfrence = @circumfrence.to_f
-			@circumfrence = (2 * @r) * (Math.PI)
+			@circumfrence = (2 * @r) * (Math::PI)
 			@circumfrence = @circumfrence.to_f
 		elsif diameter
 			@circumfrence = @circumfrence.to_f
-			@circumfrence = @d * (Math.PI)
+			@circumfrence = @d * (Math::PI)
 			@circumfrence = @circumfrence.to_f
 		end	
 	end
 	def calculate_area
 		if radius
 				@area = @area.to_f
-				@area = (@r**2) * (Math.PI)
+				@area = (@r**2) * (Math::PI)
 				@area = @area.to_f
 		elsif diameter
 			@area = @area.to_f
-			@area = (@d/2.0)**2 * (Math.PI)
+			@area = ((@d/2.0)**2) * (Math::PI)
 			@area = @area.to_f
 		end
 	end
