@@ -1,20 +1,17 @@
-<!doctype html!>
 <html>
 	<head>
-		<title>Triangle Finder</title>
+		<title>Circle Finder Results</title>
 		<link href="css/main.css" rel="stylesheet" type="text/css"> 
 		<link href='http://fonts.googleapis.com/css?family=Frijole' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
-		<div id="wrapper">
 		<div>
-		<h1>Welcome to the Amazing Shape finder</h1>
+		<h1>Results page</h1>
 		</div>
-		<h2> Please indicate which shape you would like. <h2>
-		<a href="/triangle"> <h2> Triangle </h2> </a>
-
-		<a href="/circle"> <h2> Circle </h2></a>
-		</div>
+		<h2>Circle Radius: <%=@circle1.radius%></h2>
+		<h2> Circle Diameter: <%=@circle1.diameter%></h2>
+		<h2>Circle Area: <%=@circle1.area%></h2>
+		<h2>Circle Circumfrence:<%=@circle1.circumfrence%></h2>
 	</body>
 </html>
